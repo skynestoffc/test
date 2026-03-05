@@ -1,0 +1,16 @@
+{
+  "name": "skynest-order-bot",
+  "version": "1.0.0",
+  "description": "Telegram auto-order bot with JSON DB and KomputerzAway payment API",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "axios": "^1.7.8",
+    "dotenv": "^16.4.5",
+    "node-telegram-bot-api": "^0.66.0",
+    "uuid": "^9.0.1"
+  }
+}
