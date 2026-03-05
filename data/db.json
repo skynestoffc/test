@@ -1,0 +1,116 @@
+{
+  "users": {
+    "123456789": {
+      "id": "123456789",
+      "username": "admin_user",
+      "firstName": "Admin",
+      "lastName": "",
+      "saldo": 100000,
+      "createdAt": "2024-01-01T00:00:00.000Z"
+    }
+  },
+  "categories": [
+    {
+      "id": "cat001",
+      "name": "Netflix",
+      "isActive": true
+    },
+    {
+      "id": "cat002",
+      "name": "Spotify",
+      "isActive": true
+    },
+    {
+      "id": "cat003",
+      "name": "Game Voucher",
+      "isActive": true
+    }
+  ],
+  "products": [
+    {
+      "id": "prod001",
+      "name": "Netflix 1 Bulan",
+      "categoryId": "cat001",
+      "price": 55000,
+      "description": "Akun Netflix Private 1 Bulan",
+      "isActive": true,
+      "stock": [
+        "email1@gmail.com|pass123",
+        "email2@gmail.com|pass456",
+        "email3@gmail.com|pass789"
+      ],
+      "variants": [],
+      "totalSold": 5,
+      "createdAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "prod002",
+      "name": "Netflix 3 Bulan",
+      "categoryId": "cat001",
+      "price": 150000,
+      "description": "Akun Netflix Private 3 Bulan",
+      "isActive": true,
+      "stock": [
+        "email4@gmail.com|pass111",
+        "email5@gmail.com|pass222"
+      ],
+      "variants": [],
+      "totalSold": 2,
+      "createdAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "prod003",
+      "name": "Spotify Premium",
+      "categoryId": "cat002",
+      "price": 20000,
+      "description": "Spotify Premium 1 Bulan",
+      "isActive": true,
+      "stock": [],
+      "variants": [
+        {
+          "id": "var001",
+          "name": "Individual 1 Bulan",
+          "price": 20000,
+          "stock": [
+            "user1@spotify.com|mypass1",
+            "user2@spotify.com|mypass2"
+          ]
+        },
+        {
+          "id": "var002",
+          "name": "Individual 3 Bulan",
+          "price": 55000,
+          "stock": [
+            "user3@spotify.com|mypass3"
+          ]
+        }
+      ],
+      "totalSold": 10,
+      "createdAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "prod004",
+      "name": "Mobile Legends Diamond",
+      "categoryId": "cat003",
+      "price": 15000,
+      "description": "Top up 86 Diamond",
+      "isActive": true,
+      "stock": [
+        "CODE-ML-001",
+        "CODE-ML-002",
+        "CODE-ML-003",
+        "CODE-ML-004",
+        "CODE-ML-005"
+      ],
+      "variants": [],
+      "totalSold": 20,
+      "createdAt": "2024-01-01T00:00:00.000Z"
+    }
+  ],
+  "orders": [],
+  "usedMutationIds": [],
+  "settings": {
+    "welcomeMessage": "Selamat datang di Auto Order Bot!",
+    "botName": "Auto Order Bot"
+  }
+}
