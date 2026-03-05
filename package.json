@@ -1,1 +1,0 @@
-{\n  "name": "skynest-order-bot",\n  "version": "1.0.0",\n  "description": "Telegram auto order bot with JSON DB",\n  "main": "src/index.js",\n  "scripts": {\n    "start": "node src/index.js"\n  },\n  "dependencies": {\n    "axios": "^1.6.7",\n    "dotenv": "^16.4.5",\n    "node-telegram-bot-api": "^0.63.0"\n  }\n}
