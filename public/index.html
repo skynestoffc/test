@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Image Upscaler</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="app-container">
+        <header>
+            <h1>AI Upscaler</h1>
+            <p>Enhance & upscale your photos instantly.</p>
+        </header>
+
+        <main>
+            <div class="card upload-card">
+                <div class="upload-area" id="drop-zone">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 16L12 8" stroke="#0055FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M9 11L12 8L15 11" stroke="#0055FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8 16H16" stroke="#0055FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <p>Tap to select or drag image here</p>
+                    <input type="file" id="file-input" accept="image/*" hidden>
+                </div>
+                <div id="preview-container" class="hidden">
+                    <img id="image-preview" src="" alt="Preview">
+                    <button id="remove-btn" class="text-btn">Remove</button>
+                </div>
+            </div>
+
+            <div class="controls">
+                <div class="control-group">
+                    <label>Type</label>
+                    <div class="toggle-group">
+                        <label class="radio-label">
+                            <input type="radio" name="type" value="upscale" checked>
+                            <span>Upscale</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="type" value="enhance">
+                            <span>Enhance</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="control-group" id="scale-group">
+                    <label>Scale Factor</label>
+                    <div class="toggle-group">
+                        <label class="radio-label">
+                            <input type="radio" name="scale" value="2" checked>
+                            <span>2x</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="scale" value="4">
+                            <span>4x</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <button id="process-btn" disabled>
+                <span class="btn-text">Start Processing</span>
+                <span class="loader hidden"></span>
+            </button>
+        </main>
+
+        <div id="result-modal" class="modal hidden">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h3>Result</h3>
+                <div class="result-image-wrapper">
+                    <img id="result-image" src="" alt="Upscaled">
+                </div>
+                <a id="download-btn" href="#" target="_blank" class="download-btn">Download Image</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
